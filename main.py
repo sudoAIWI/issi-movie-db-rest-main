@@ -34,3 +34,4 @@ def delete_movie(movie_id: int):
         raise HTTPException(status_code=404, detail="Movie not found")
     db_movie.delete_instance()
     return db_movie
+
